@@ -13,6 +13,7 @@ import IngredientsDetailsScreen from '../screens/IngredientsDetails/IngredientsD
 import Login from '../screens/Login/Login';
 import Welcome from '../screens/Welcome/Welcome'
 import Signup from '../screens/Login/SignUp';
+import FavoritesScreen from '../screens/Search/Favourites';
  const Stack = createStackNavigator();
 
 function MainNavigator() {
@@ -37,6 +38,7 @@ function MainNavigator() {
       <Stack.Screen name='Ingredient' component={IngredientScreen} />
       <Stack.Screen name='Search' component={SearchScreen} />
       <Stack.Screen name='IngredientsDetails' component={IngredientsDetailsScreen} />
+      <Stack.Screen name='favs' component={FavoritesScreen} />
     </Stack.Navigator>
   )
 } 

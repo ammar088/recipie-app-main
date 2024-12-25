@@ -37,6 +37,14 @@ export default function DrawerContainer(props) {
             navigation.closeDrawer();
           }}
         />
+        <MenuButton
+          title="FAVOURITES"
+          source={require("../../../assets/icons/heart-solid.png")}
+          onPress={() => {
+            navigation.navigate("favs");
+            navigation.closeDrawer();
+          }}
+        />
       </View>
     </LinearGradient>
   );
